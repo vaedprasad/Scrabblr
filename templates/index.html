@@ -7,7 +7,7 @@
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous">
     </script>
-    <!--<script src="/static/phaser.min.js"></script> /-->
+    <script src="/static/phaser.min.js"></script>
     <script src="/static/main.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="/static/style.css" rel="stylesheet">
@@ -19,268 +19,31 @@
     <div class="container">
         <div class="game-container">
             <div id="game"> </div>
-            <table id="box-table-b">
-                <thead>
-                <tr>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #d72421;"> <input id="test" type="text"> <span class="BoardLetterTW">TW</span><span class="arrow-right" style="border-left: 9px solid #d72421;"></span><span class="arrow-left" style="border-right: 9px solid transparent;"></span><span class="arrow-down" style="border-top: 9px solid #d72421;"></span><span class="arrow-up" style="border-bottom: 9px solid transparent;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid transparent;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #d72421;"> <span class="BoardLetterTW">TW</span><span class="arrow-right" style="border-left: 9px solid #d72421;"></span><span class="arrow-left" style="border-right: 9px solid #d72421;"></span><span class="arrow-down" style="border-top: 9px solid #d72421;"></span><span class="arrow-up" style="border-bottom: 9px solid transparent;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid transparent;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #d72421;"> <span class="BoardLetterTW">TW</span><span class="arrow-right" style="border-left: 9px solid transparent;"></span><span class="arrow-left" style="border-right: 9px solid #d72421;"></span><span class="arrow-down" style="border-top: 9px solid #d72421;"></span><span class="arrow-up" style="border-bottom: 9px solid transparent;"></span></div></td>
-                </tr>
-                <tr>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #4695ca;"> <span class="BoardLetterTL">TL</span><span class="arrow-right" style="border-left: 9px solid #4695ca;"></span><span class="arrow-left" style="border-right: 9px solid #4695ca;"></span><span class="arrow-down" style="border-top: 9px solid #4695ca;"></span><span class="arrow-up" style="border-bottom: 9px solid #4695ca;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #4695ca;"> <span class="BoardLetterTL">TL</span><span class="arrow-right" style="border-left: 9px solid #4695ca;"></span><span class="arrow-left" style="border-right: 9px solid #4695ca;"></span><span class="arrow-down" style="border-top: 9px solid #4695ca;"></span><span class="arrow-up" style="border-bottom: 9px solid #4695ca;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid transparent;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid transparent;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                </tr>
-                <tr>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #4695ca;"> <span class="BoardLetterTL">TL</span><span class="arrow-right" style="border-left: 9px solid #4695ca;"></span><span class="arrow-left" style="border-right: 9px solid #4695ca;"></span><span class="arrow-down" style="border-top: 9px solid #4695ca;"></span><span class="arrow-up" style="border-bottom: 9px solid #4695ca;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #4695ca;"> <span class="BoardLetterTL">TL</span><span class="arrow-right" style="border-left: 9px solid #4695ca;"></span><span class="arrow-left" style="border-right: 9px solid #4695ca;"></span><span class="arrow-down" style="border-top: 9px solid #4695ca;"></span><span class="arrow-up" style="border-bottom: 9px solid #4695ca;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #4695ca;"> <span class="BoardLetterTL">TL</span><span class="arrow-right" style="border-left: 9px solid #4695ca;"></span><span class="arrow-left" style="border-right: 9px solid #4695ca;"></span><span class="arrow-down" style="border-top: 9px solid #4695ca;"></span><span class="arrow-up" style="border-bottom: 9px solid #4695ca;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #4695ca;"> <span class="BoardLetterTL">TL</span><span class="arrow-right" style="border-left: 9px solid #4695ca;"></span><span class="arrow-left" style="border-right: 9px solid #4695ca;"></span><span class="arrow-down" style="border-top: 9px solid #4695ca;"></span><span class="arrow-up" style="border-bottom: 9px solid #4695ca;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #d72421;"> <span class="BoardLetterTW">TW</span><span class="arrow-right" style="border-left: 9px solid #d72421;"></span><span class="arrow-left" style="border-right: 9px solid transparent;"></span><span class="arrow-down" style="border-top: 9px solid #d72421;"></span><span class="arrow-up" style="border-bottom: 9px solid #d72421;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"> </td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #d72421;"> <span class="BoardLetterTW">TW</span><span class="arrow-right" style="border-left: 9px solid transparent;"></span><span class="arrow-left" style="border-right: 9px solid #d72421;"></span><span class="arrow-down" style="border-top: 9px solid #d72421;"></span><span class="arrow-up" style="border-bottom: 9px solid #d72421;"></span></div>
-                </tr>
-                <tr>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #4695ca;"> <span class="BoardLetterTL">TL</span><span class="arrow-right" style="border-left: 9px solid #4695ca;"></span><span class="arrow-left" style="border-right: 9px solid #4695ca;"></span><span class="arrow-down" style="border-top: 9px solid #4695ca;"></span><span class="arrow-up" style="border-bottom: 9px solid #4695ca;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #4695ca;"> <span class="BoardLetterTL">TL</span><span class="arrow-right" style="border-left: 9px solid #4695ca;"></span><span class="arrow-left" style="border-right: 9px solid #4695ca;"></span><span class="arrow-down" style="border-top: 9px solid #4695ca;"></span><span class="arrow-up" style="border-bottom: 9px solid #4695ca;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #4695ca;"> <span class="BoardLetterTL">TL</span><span class="arrow-right" style="border-left: 9px solid #4695ca;"></span><span class="arrow-left" style="border-right: 9px solid #4695ca;"></span><span class="arrow-down" style="border-top: 9px solid #4695ca;"></span><span class="arrow-up" style="border-bottom: 9px solid #4695ca;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #4695ca;"> <span class="BoardLetterTL">TL</span><span class="arrow-right" style="border-left: 9px solid #4695ca;"></span><span class="arrow-left" style="border-right: 9px solid #4695ca;"></span><span class="arrow-down" style="border-top: 9px solid #4695ca;"></span><span class="arrow-up" style="border-bottom: 9px solid #4695ca;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid transparent;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid transparent;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                </tr>
-                <tr>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #6fe6f6;"> <span class="BoardLetterDL">DL</span><span class="arrow-right" style="border-left: 9px solid #6fe6f6;"></span><span class="arrow-left" style="border-right: 9px solid #6fe6f6;"></span><span class="arrow-down" style="border-top: 9px solid #6fe6f6;"></span><span class="arrow-up" style="border-bottom: 9px solid #6fe6f6;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #4695ca;"> <span class="BoardLetterTL">TL</span><span class="arrow-right" style="border-left: 9px solid #4695ca;"></span><span class="arrow-left" style="border-right: 9px solid #4695ca;"></span><span class="arrow-down" style="border-top: 9px solid #4695ca;"></span><span class="arrow-up" style="border-bottom: 9px solid #4695ca;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #4695ca;"> <span class="BoardLetterTL">TL</span><span class="arrow-right" style="border-left: 9px solid #4695ca;"></span><span class="arrow-left" style="border-right: 9px solid #4695ca;"></span><span class="arrow-down" style="border-top: 9px solid #4695ca;"></span><span class="arrow-up" style="border-bottom: 9px solid #4695ca;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock"> <span class="BoardLetterDW">DW</span><span class="arrow-right"></span><span class="arrow-left"></span><span class="arrow-down"></span><span class="arrow-up"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #d72421;"> <span class="BoardLetterTW">TW</span><span class="arrow-right" style="border-left: 9px solid #d72421;"></span><span class="arrow-left" style="border-right: 9px solid transparent;"></span><span class="arrow-down" style="border-top: 9px solid transparent;"></span><span class="arrow-up" style="border-bottom: 9px solid #d72421;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #d72421;"> <span class="BoardLetterTW">TW</span><span class="arrow-right" style="border-left: 9px solid #d72421;"></span><span class="arrow-left" style="border-right: 9px solid #d72421;"></span><span class="arrow-down" style="border-top: 9px solid transparent;"></span><span class="arrow-up" style="border-bottom: 9px solid #d72421;"></span></div></td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70">&nbsp;</td>
-                    <td width="70" height="70"><div id="BoardBlock" style="background: #d72421;"> <span class="BoardLetterTW">TW</span><span class="arrow-right" style="border-left: 9px solid transparent;"></span><span class="arrow-left" style="border-right: 9px solid #d72421;"></span><span class="arrow-down" style="border-top: 9px solid transparent;"></span><span class="arrow-up" style="border-bottom: 9px solid #d72421;"></span></div></td>
-                </tr>
-                </thead>
-            </table>
-        </div>
-        <div class="word-ranking">
-            Rankings Go Here
+
+        <div class="move-ranking">
+            <h1> Optimal Moves </h1>
+            <!--<table class="table">
+                  <thead>
+                      <th>#</th>
+                      <th>Name</th>
+                      <th>Score</th>
+                  </thead>
+                  <tbody>
+                      <tr></tr>
+                  </tbody>
+              </table> /-->
+            <ol class="moves">
+                {% for move in moves %}
+                <li>
+                    <span class="word">
+                        {{ move[0] }}
+                    </span>
+                    <span class="score">
+                        {{ move[1] }}
+                    </span>
+                </li>
+                {% endfor %}
+            </ol>
         </div>
     </div>
 </body>
