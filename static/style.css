@@ -4,7 +4,7 @@ body {
 }
 
 #box-table-b {
-    transform: scale(0.4);
+    transform: scale(0.4) translate(-800px,-800px);
 }
 
 .container {
@@ -48,13 +48,19 @@ button.fancy.green {
   background: #6dcc36
 }
 
-input {
+/*input {
   font-family: 'Futura', 'Helvetica', sans-serif;
   padding: .5em 1em;
   font-size: 1.1em;
   width: 8em;
-}
+}*/
 
 input:focus {
   outline: none;
+}
+
+.word-ranking {
+  display: inline-block;
+  float: left;
+  margin-left: 1em;;
 }

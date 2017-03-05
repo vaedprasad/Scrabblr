@@ -1,13 +1,23 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body {
+/*body {
   background:-webkit-gradient(linear, 100% 100%, 0% 5%, from(#f4f4f4), to(#e0e0e0));
 	margin: 
 ; 	margin-left: 0px;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
+}
+*/
+
+#test {
+    opacity: 0.3;
+    font-family: 'Asap', serif;
+	font-size: 15px;
+	color: #272832;
+	width: 74px;
+	height:79px;
 }
 .ScrabbleLetter {
 	font-family: 'Asap', serif;
