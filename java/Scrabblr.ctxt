@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=board\ tiles
+comment1.target=java.lang.String[]\ wordFinder(char[][],\ char[])
+comment2.params=word\ tiles
+comment2.target=int\ pointValue(java.lang.String,\ char[])
+comment3.params=e
+comment3.target=int\ charToInt(char)
+numComments=4
