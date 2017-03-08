@@ -7,8 +7,12 @@ body {
   padding-top: 3em;
   padding-bottom: 3em;
   text-align: center;
-  width: 800px;
+  width: 100px;
   margin: 0 auto;
+}
+
+.table td {
+    text-align:left;
 }
 
 .game-container {
@@ -55,33 +59,8 @@ input:focus {
   outline: none;
 }
 
-.leaderboard {
+.move-ranking {
   display: inline-block;
   float: left;
-  margin-left: 1em;;
-}
-
-.scores {
-  margin: 0 auto;
-  width: 300px;
-  text-align: left;
-}
-
-.scores li {
-  line-height: 2em;
-  font-size: 1.2em;
-}
-
-.scores li:before {
-  color: white;
-}
-
-.scores .name {
-  display: inline-block;
-  position: relative;
-}
-
-.scores .score {
-  display: inline-block;
-  float: right;
+  margin-left: 5em;
 }

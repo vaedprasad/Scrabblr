@@ -3,6 +3,7 @@
 <title>Scrabblr</title>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous">
@@ -11,7 +12,6 @@
     <script src="/static/main.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="/static/style.css" rel="stylesheet">
-    <link href="/static/board.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
 </head>
@@ -19,31 +19,42 @@
     <div class="container">
         <div class="game-container">
             <div id="game"> </div>
-
+            <div id="rack">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         <div class="move-ranking">
             <h1> Optimal Moves </h1>
-            <!--<table class="table">
-                  <thead>
-                      <th>#</th>
-                      <th>Name</th>
-                      <th>Score</th>
-                  </thead>
-                  <tbody>
-                      <tr></tr>
-                  </tbody>
-              </table> /-->
-            <ol class="moves">
-                {% for move in moves %}
-                <li>
-                    <span class="word">
-                        {{ move[0] }}
-                    </span>
-                    <span class="score">
-                        {{ move[1] }}
-                    </span>
-                </li>
-                {% endfor %}
-            </ol>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Word</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for move in moves %}
+                    <tr>
+                        <th scope="row">{{ loop.index }}</th>
+                        <td>{{ move[0] }}</td>
+                        <td>{{ move[1] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
