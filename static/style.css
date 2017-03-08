@@ -3,10 +3,6 @@ body {
   color: #222;
 }
 
-#box-table-b {
-    transform: scale(0.4) translate(-800px,-800px);
-}
-
 .container {
   padding-top: 3em;
   padding-bottom: 3em;
@@ -48,19 +44,44 @@ button.fancy.green {
   background: #6dcc36
 }
 
-/*input {
+input {
   font-family: 'Futura', 'Helvetica', sans-serif;
   padding: .5em 1em;
   font-size: 1.1em;
   width: 8em;
-}*/
+}
 
 input:focus {
   outline: none;
 }
 
-.word-ranking {
+.leaderboard {
   display: inline-block;
   float: left;
   margin-left: 1em;;
+}
+
+.scores {
+  margin: 0 auto;
+  width: 300px;
+  text-align: left;
+}
+
+.scores li {
+  line-height: 2em;
+  font-size: 1.2em;
+}
+
+.scores li:before {
+  color: white;
+}
+
+.scores .name {
+  display: inline-block;
+  position: relative;
+}
+
+.scores .score {
+  display: inline-block;
+  float: right;
 }
