@@ -4,6 +4,7 @@ from flask import request
 import json
 import moveCalculator
 from operator import itemgetter
+from random import randint
 
 app = Flask("Scrabblr")
 
@@ -16,7 +17,8 @@ class MoveRankings:
 
 mr = MoveRankings()
 
-mr.moves.append(("Testing", 420))
+for i in range(0,10):
+    mr.moves.append(("Testing", randint(0,50)))
 
 @app.route("/")
 def home():
