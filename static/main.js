@@ -23,4 +23,15 @@ var board = new Phaser.Game(500, 500, Phaser.AUTO, 'game');
 board.state.add('main', mainState);
 board.state.start('main');
 
+$(document).ready(function() {
+    $('.rack-cell').keydown(function(e) {
+        if (e.keyCode >= 65 && e.keyCode <= 90) {
+
+        }
+        else {
+            e.preventDefault();
+        }
+    });
+});
+
 })();
