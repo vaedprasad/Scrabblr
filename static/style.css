@@ -18,13 +18,18 @@ body {
 td input {
     text-align: center;
     box-sizing: border-box;
-    width: 71px;
-    height: 56px;
+    width: 69px;
+    height: 60px;
 }
 
 .rack-cell {
     background-color: #CDA982;
     height: 4em;
+}
+
+#tile-image {
+    width: 69px;
+    height: 60px;
 }
 
 .game-container {
